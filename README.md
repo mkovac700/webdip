@@ -1,2 +1,3 @@
-# Osnovni template
-Ovo je osnovni template za univerzalni rad na projektima.
+# Web dizajn i programiranje (WebDiP)
+
+Projekt iz kolegija Web dizajn i programiranje (WebDiP)
