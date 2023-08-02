@@ -1,6 +1,6 @@
 # Upute za pokretanje projekta
 
-NAPOMENA: Za pokretanje je potreban Linux operativni sustav s instaliranim MySql-om i Apache2 serverom. Preporuka je koristiti Linux Mint, jer je projekt rađen upravo na njemu. Prije prvog pokretanja potrebno je izvršiti sve korake u nastavku, dok je kod svakog idućeg pokretanja potrebno preskoćiti korake 2, 3, 4.
+NAPOMENA: Za pokretanje je potreban Linux operativni sustav s instaliranim MySql-om i Apache2 serverom. Preporuka je koristiti Linux Mint, jer je projekt rađen upravo na njemu. Prije prvog pokretanja potrebno je izvršiti sve korake u nastavku, dok je kod svakog idućeg pokretanja potrebno preskočiti korake 2, 3, 4.
 
 1. Otvoriti terminal i izvršiti slijedeće komande:<br>
    a. service mysql start<br>
