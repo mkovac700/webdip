@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Marijan Kovač">
+    <meta name="description" content="Zadaća 01 - 27.3.2022.">
+
+    <link rel="stylesheet" type="text/css" href="css/mkovac.css"/>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <noscript>Preglednik ne može izvršiti JavaScript!</noscript>
+    
+    <title>Dokumentacija</title>
+</head>
+
+<body id="tijelo">
+    <header id="zaglavlje">
+        <div style="display: flex;">
+            <div style="display: flex;">
+                <a class="hamburger" href="#zaglavlje">
+                    <img class="hamburger_icon" src="materijali/hamburger.jpg" alt="Hamburger icon" width="80" height="80">
+                </a>
+            </div>
+
+            <div style="display: flex; margin: auto;">
+                <a class="zaglavlje_logo" href="index.php">
+                    <img src="materijali/oil.png" alt="Fuel logo" width="50" height="50">            
+                </a>
+                    
+                <a class="naslov" href="#tijelo">
+                    <h1>Cronaft derivati</h1>
+                </a>
+            </div>
+
+            <div style="visibility: hidden;">
+                
+                <a class="hamburger" href="#zaglavlje">
+                    <img class="hamburger_icon" src="materijali/hamburger.jpg" alt="Hamburger icon" width="80" height="80">
+                </a>
+                
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigacija">
+        <a class="poveznica" href="index.php">Početna stranica</a>
+    </nav>
+
+    <main class="autor">
+        <h2>Opis projektnog zadatka</h2>
+        <p>Izrada sustava koji služi za upravljanje benzinskom postajom i evidenciju potrošnje goriva.</p>
+
+        <h2>Opis projektnog rješenja</h2>
+        <p>Izrada web aplikacije koja olakšava upravljanje benzinskim postajama, omogućuje evidentiranje točenja goriva za kupce te nudi informativni prikaz relevantnih podataka.</p>
+
+        <h2>Navigacijski dijagram</h2>
+        <div class="navigacijski">
+            <a href="materijali/navigacijski.png">
+                <img src="materijali/navigacijski.png" alt="Navigacijski dijagram" width="200" height="200">
+            </a>
+        </div>
+
+        <h2>ERA model</h2>
+        <div class="era">
+            <a href="materijali/era.png">
+                <img src="materijali/era.png" alt="ERA model" width="200" height="200">
+            </a>
+        </div>
+
+        <h2>Popis datoteka i skripti</h2>
+        <table>
+            <tr>
+                <th><b>Naziv</b></th>
+                <th><b>Opis</b></th>
+            </tr>
+            <tr>
+                <td>index.php</td>
+                <td>Početna stranica projekta s navigacijom za ostale stranice projekta</td>
+            </tr>
+            <tr>
+                <td>registracija.php</td>
+                <td>Registracija novih korisnika u sustav te validacije na strani klijenta</td>
+            </tr>
+            <tr>
+                <td>registracija.tpl</td>
+                <td>Smarty template vezan uz stranicu registracija.php</td>
+            </tr>
+            <tr>
+                <td>provjera.php</td>
+                <td>Provjera korisničkog imena</td>
+            </tr>
+            <tr>
+                <td>registracija.js</td>
+                <td>AJAX provjera korisničkog imena te validacije na strani poslužitelja</td>
+            </tr>
+            <tr>
+                <td>aktivacija.php</td>
+                <td>Aktivacija novoregistriranog računa putem aktivacijskog koda</td>
+            </tr>
+            <tr>
+                <td>validacija.tpl</td>
+                <td>Smarty template vezan uz stranicu aktivacija.php</td>
+            </tr>
+            <tr>
+                <td>prijava.php</td>
+                <td>Prijava već postojećih korisnika u sustav</td>
+            </tr>
+            <tr>
+                <td>prijava.tpl</td>
+                <td>Smarty template vezan uz stranicu prijava.php</td>
+            </tr>
+            <tr>
+                <td>oporavak.php</td>
+                <td>Oporavak zaboravljene lozinke</td>
+            </tr>
+            <tr>
+                <td>oporavak.tpl</td>
+                <td>Smarty template vezan uz stranicu oporavak.php</td>
+            </tr>
+            <tr>
+                <td>odjava.php</td>
+                <td>Odjava korisnika iz sustava</td>
+            </tr>
+            <tr>
+                <td>rang_lista.php</td>
+                <td>Prikaz rang liste benzinskih postaja prema ukupno natočenom gorivu</td>
+            </tr>
+            <tr>
+                <td>rang_lista.tpl</td>
+                <td>Smarty template vezan uz stranicu rang_lista.php</td>
+            </tr>
+            <tr>
+                <td>rang_lista.js</td>
+                <td>Preusmjeravanje na stranicu o informativnim cijenama goriva</td>
+            </tr>
+            <tr>
+                <td>cijene_goriva.php</td>
+                <td>Prikaz informativnih cijena goriva</td>
+            </tr>
+            <tr>
+                <td>cijene_goriva.tpl</td>
+                <td>Smarty template vezan uz stranicu cijene_goriva.php</td>
+            </tr>
+            <tr>
+                <td>galerija.php</td>
+                <td>Prikaz galerije vozila</td>
+            </tr>
+            <tr>
+                <td>galerija.tpl</td>
+                <td>Smarty template vezan uz stranicu galerija.php</td>
+            </tr>
+            <tr>
+                <td>dokumentacija.html</td>
+                <td>Prikaz dokumentacije o projektu</td>
+            </tr>
+            <tr>
+                <td>o_autoru.html</td>
+                <td>Prikaz podataka o autoru projekta</td>
+            </tr>
+            <tr>
+                <td>moja_vozila.php</td>
+                <td>Prikaz vozila trenutno registriranog korisnika u sustav</td>
+            </tr>
+            <tr>
+                <td>moja_vozila.tpl</td>
+                <td>Smarty template vezan uz stranicu moja_vozila.php</td>
+            </tr>
+            <tr>
+                <td>moja_vozila.js</td>
+                <td>AJAX vozila korisnika</td>
+            </tr>
+            <tr>
+                <td>uredi_vozila.php</td>
+                <td>Dodavanje ili ažuriranje vozila trenutno registriranog korisnika u sustav</td>
+            </tr>
+            <tr>
+                <td>uredi_vozila.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_vozila.php</td>
+            </tr>
+            <tr>
+                <td>brisanje_vozila.php</td>
+                <td>Brisanje vozila trenutno registriranog korisnika u sustav</td>
+            </tr>
+            <tr>
+                <td>vrste_goriva.php</td>
+                <td>Pretraga i prikaz benzinskih postaja</td>
+            </tr>
+            <tr>
+                <td>vrste_goriva.tpl</td>
+                <td>Smarty template vezan uz stranicu vrste_goriva.php</td>
+            </tr>
+            <tr>
+                <td>vrste_goriva.js</td>
+                <td>Preusmjeravanje na stranicu uredi_vrste_goriva.php</td>
+            </tr>
+            <tr>
+                <td>otvorena_mjesta.php</td>
+                <td>Prikaz otvorenih mjesta na odabranoj benzinskoj postaji gdje je moguće evidentirati točenje</td>
+            </tr>
+            <tr>
+                <td>otvorena_mjesta.tpl</td>
+                <td>Smarty template vezan uz stranicu otvorena_mjesta.php</td>
+            </tr>
+            <tr>
+                <td>otvorena_mjesta.js</td>
+                <td>Preusmjeravanje na stranicu otvorena_mjesta.php</td>
+            </tr>
+            <tr>
+                <td>evidencija.php</td>
+                <td>Evidencija novog točenja</td>
+            </tr>
+            <tr>
+                <td>evidencija.tpl</td>
+                <td>Smarty template vezan uz stranicu evidencija.php</td>
+            </tr>
+            <tr>
+                <td>moje_benzinske_postaje.php</td>
+                <td>Prikaz benzinskih postaja za koje je registrirani moderator zadužen</td>
+            </tr>
+            <tr>
+                <td>moje_benzinske_postaje.tpl</td>
+                <td>Smarty template vezan uz stranicu moje_benzinske_postaje.php</td>
+            </tr>
+            <tr>
+                <td>moje_benzinske_postaje.js</td>
+                <td>Preusmjeravanje na stranicu moje_benzinske_postaje.php</td>
+            </tr>
+            <tr>
+                <td>vrste_goriva.php</td>
+                <td>Prikaz vrsta goriva vezanih uz odabranu benzinsku postaju</td>
+            </tr>
+            <tr>
+                <td>vrste_goriva.tpl</td>
+                <td>Smarty template vezan uz stranicu vrste_goriva.php</td>
+            </tr>
+            <tr>
+                <td>uredi_vrste_goriva.php</td>
+                <td>Dodavanje ili ažuriranje vrsta goriva vezanih uz odabranu benzinsku postaju</td>
+            </tr>
+            <tr>
+                <td>uredi_vrste_goriva.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_vrste_goriva.php</td>
+            </tr>
+            <tr>
+                <td>mjesta.php</td>
+                <td>Prikaz mjesta na odabranoj benzinskoj postaji</td>
+            </tr>
+            <tr>
+                <td>mjesta.tpl</td>
+                <td>Smarty template vezan uz stranicu mjesta.php</td>
+            </tr>
+            <tr>
+                <td>uredi_mjesta.php</td>
+                <td>Dodavanje ili ažuriranje mjesta vezanih uz odabranu benzinsku postaju</td>
+            </tr>
+            <tr>
+                <td>uredi_mjesta.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_mjesta.php</td>
+            </tr>
+            <tr>
+                <td>uredi_mjesta_vg.php</td>
+                <td>Prikaz vrsta goriva postavljenih na određeno mjesto</td>
+            </tr>
+            <tr>
+                <td>uredi_mjesta_vg.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_mjesta_vg.php</td>
+            </tr>
+            <tr>
+                <td>brisanjegorivo.php</td>
+                <td>Brisanje vrste goriva vezane uz odabrano mjesto točenja</td>
+            </tr>
+            <tr>
+                <td>popis_goriva.php</td>
+                <td>Prikaz ukupne količine goriva na odabranoj benzinskoj postaji</td>
+            </tr>
+            <tr>
+                <td>popis_goriva.tpl</td>
+                <td>Smarty template vezan uz stranicu popis_goriva.php</td>
+            </tr>
+            <tr>
+                <td>naplata.php</td>
+                <td>Naplata mjesta točenja koje čeka naplatu</td>
+            </tr>
+            <tr>
+                <td>naplata.tpl</td>
+                <td>Smarty template vezan uz stranicu naplata.php</td>
+            </tr>
+            <tr>
+                <td>naplata.js</td>
+                <td>AJAX naplata goriva</td>
+            </tr>
+            <tr>
+                <td>statistika_tocenja.php</td>
+                <td>Prikaz statistike točenja</td>
+            </tr>
+            <tr>
+                <td>statistika_tocenja.tpl</td>
+                <td>Smarty template vezan uz stranicu statistika_tocenja.php</td>
+            </tr>
+            <tr>
+                <td>racuni.php</td>
+                <td>Popis korisničkih računa</td>
+            </tr>
+            <tr>
+                <td>racuni.tpl</td>
+                <td>Smarty template vezan uz stranicu racuni.php</td>
+            </tr>
+            <tr>
+                <td>blokiraj.php</td>
+                <td>Skripta za odblokiranje korisnika</td>
+            </tr>
+            <tr>
+                <td>dnevnik.php</td>
+                <td>Prikaz logova aplikacije</td>
+            </tr>
+            <tr>
+                <td>dnevnik.tpl</td>
+                <td>Smarty template vezan uz stranicu dnevnik.php</td>
+            </tr>
+            <tr>
+                <td>moderatori.php</td>
+                <td>Dodavanje, ažuriranje ili brisanje moderatora benzinskih postaja</td>
+            </tr>
+            <tr>
+                <td>moderatori.tpl</td>
+                <td>Smarty template vezan uz stranicu moderatori.php</td>
+            </tr>
+            <tr>
+                <td>moderatori.js</td>
+                <td>AJAX moderatori</td>
+            </tr>
+            <tr>
+                <td>uredi_moderatore.php</td>
+                <td>Dodavanje ili uređivanje moderatora benzinske postaje</td>
+            </tr>
+            <tr>
+                <td>uredi_moderatore.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_moderatore.php</td>
+            </tr>
+            <tr>
+                <td>brisanje_moderatori.php</td>
+                <td>Brisanje moderatora benzinske postaje</td>
+            </tr>
+            <tr>
+                <td>lokacije.php</td>
+                <td>Dodavanje, ažuriranje ili brisanje postaja</td>
+            </tr>
+            <tr>
+                <td>lokacije.tpl</td>
+                <td>Smarty template vezan uz stranicu lokacije.php</td>
+            </tr>
+            <tr>
+                <td>uredi_lokacije.php</td>
+                <td>dodavanje ili uređivanje benzinskih postaja</td>
+            </tr>
+            <tr>
+                <td>uredi_lokacije.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_lokacije.php</td>
+            </tr>
+            <tr>
+                <td>brisanje_lokacije.php</td>
+                <td>Brisanje benzinskih postaja</td>
+            </tr>
+            <tr>
+                <td>gorivo.php</td>
+                <td>Dodavanje, ažuriranje ili brisanje goriva</td>
+            </tr>
+            <tr>
+                <td>gorivo.tpl</td>
+                <td>Smarty template vezan uz stranicu gorivo.php</td>
+            </tr>
+            <tr>
+                <td>uredi_gorivo.php</td>
+                <td>Dodavanje ili uređivanje goriva</td>
+            </tr>
+            <tr>
+                <td>uredi_gorivo.tpl</td>
+                <td>Smarty template vezan uz stranicu uredi_gorivo.php</td>
+            </tr>
+            <tr>
+                <td>obrisigorivo.php</td>
+                <td>brisanje goriva</td>
+            </tr>
+        </table>
+
+        <h2>Popis korištenih alata i tehnologija</h2>
+        <table>
+            <tr>
+                <th><b>Naziv</b></th>
+                <th><b>Opis</b></th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Korišteno za kreiranje stranica s formama</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Korišteno za dizajn stranica</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Korišteno za provjere i validacije na strani klijenta</td>
+            </tr>
+            <tr>
+                <td>AJAX</td>
+                <td>Korišteno za brisanje podataka iz baze bez osvježavanja stranice</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>Korišteno za izradu dinamičkih i interaktivnih web stranica</td>
+            </tr>
+            <tr>
+                <td>Smarty</td>
+                <td>Korišteno kao PHP predložak/okvir</td>
+            </tr>
+        </table>
+
+        <h2>Popis vanjskih modula/biblioteka </h2>
+        <p>U izradi projekta nisu korištene vanjske biblioteke ili moduli.</p>
+    </main>
+
+    <footer>
+        <div>
+            2022 &copy; <a class="poveznica" href="mailto:mkovac@foi.hr">Marijan Kovač</a>
+        </div>
+    </footer>
+</body>
+</html>
