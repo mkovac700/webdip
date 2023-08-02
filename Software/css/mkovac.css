@@ -1,0 +1,575 @@
+* {
+    box-sizing: border-box;
+  }
+
+header{
+    background-color: black;
+    color: white;
+}
+
+#zaglavlje{
+    text-align: center;
+}
+
+#zaglavlje .zaglavlje_logo{
+    display: flex;
+    justify-content: center;
+    margin:auto 0.5em;
+}
+
+body{
+    margin: 0;
+}
+
+.naslov{
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 3%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding-bottom: 0.5em;
+}
+
+nav a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav{
+    display: none;
+    background-color: black;
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+#tijelo:target + nav{
+    display: none;
+}
+
+#zaglavlje:target + nav{
+    display: block;
+}
+
+body{
+    background-color: rgba(22,25,32,255); /*rgba(22,25,32,255)*/
+}
+
+footer{
+    padding: 0;
+    padding-top: 1em;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.poveznica{
+    color: white;
+    text-decoration: none;
+}
+
+.animacija{
+    padding-bottom: 430px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.animacija img{
+    width: 33%;
+}
+
+.animacija figcaption{
+    padding-top: 0.5em;
+    text-align: center; 
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.animacija figure{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    animation: slajdanje 20s infinite;
+    left: 100%;
+}
+
+@keyframes slajdanje{
+    0%{
+        left: 100%;
+    }
+    16.665%{
+        left: 0%;
+    }
+    33.33%{
+        left: 0%;
+    }
+    50%{
+        left: -100%;
+    }
+    75%{
+        left: -200%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+
+#fig1{
+    animation-fill-mode: backwards;
+    height: fit-content;
+}
+
+#fig2{
+    animation-fill-mode: backwards;
+    animation-delay: 6.66s;
+    height: fit-content;
+}
+
+#fig3{
+    animation-fill-mode: backwards;
+    animation-delay: 13.33s;
+    height: fit-content;
+}
+
+.row{
+    padding-bottom: 3em;
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row a{
+    text-decoration: none;
+    color: white;
+}
+
+.column {
+    float: left;
+    padding: 2em;
+    width: 33.33%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+.autor{
+    padding-bottom: 2em;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.autor img{
+    padding-bottom: 1em;
+}
+
+.autor ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.autor ul li{
+    padding-bottom: 0.5em;
+}
+
+
+/*registracija.html*/
+
+.registracija_footer{
+    padding: 0;
+    padding-top: 1em;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registracija_prijava{
+    text-align: center;
+    color: black;
+    background-color: rgba(254,208,73,255);
+    width: 30%;
+    margin:auto;
+    padding-bottom: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-weight:normal;
+    font-size: medium;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.registracija_prijava input{
+    border-radius: 5px;
+    border-style:solid;
+    border-color: black;
+    height: 25px;
+    text-align: center;
+    font-size: medium;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+}
+
+.registracija_checkboxes{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+
+.prijava_checkboxes{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+
+.gumb{
+    margin:auto;
+    text-align: center;
+    display: flex;
+    padding: 1em;
+    border-radius: 20px;
+    border-style: none;
+    font-size: medium;
+}
+
+.gumb_region{
+    padding: 1em 0;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(254,208,73,255);
+    width: 30%;
+    margin:auto;
+}
+
+.title_region{
+    padding: 0;
+    background-color: rgba(254,208,73,255);
+    width: 30%;
+    margin:auto;
+    text-align: center;
+    font-size:medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*letter-spacing: 5px;*/
+}
+
+.title_region h2{
+    margin:auto;
+    padding: 1em 0em 1em 0em;
+}
+
+/*prijava*/
+
+.prijava_radiobuttons{
+    width: 30%;
+    margin: auto;
+}
+
+.footer_fixed{
+    position: fixed;
+    padding: 0;
+    padding-top: 1em;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.prijava_link a{
+    text-decoration: none;
+    color: black;
+}
+
+fieldset{
+    width: max-content;
+    margin:auto;
+    border-color: black;
+}
+
+textarea{
+    min-width: 24em;
+    min-height: 5em;
+}
+
+/*popis*/
+
+.title_region_popis{
+    padding: 0;
+    background-color: rgba(254,208,73,255);
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+}
+
+.title_region_popis h2{
+    margin:auto;
+    padding: 1em 0em 1em 0em;
+}
+
+.table_region{
+    text-align: center;
+    color: black;
+    background-color: rgba(254,208,73,255);
+    border-radius: 0px 0px 20px 20px;
+    width: 50%;
+    margin:auto;
+    padding-bottom: 1em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:normal;
+    font-size: large;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+table, th, td {
+    /*border:2px solid black;*/
+    border:2px solid white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+table{
+    margin: auto;
+    max-width: 90%;
+    border-collapse: collapse;
+}
+
+@media print{
+    header, footer {
+        display:none;
+    }
+
+    @page{
+        margin: 0;
+    }
+}
+
+.title_region_multimedija{
+    padding: 0;
+    margin:auto;
+    background-color: rgba(254,208,73,255);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+}
+
+.title_region_multimedija h2{
+    margin:auto;
+    padding: 1em 0em 1em 0em;
+}
+
+
+.search_region{
+    padding-bottom: 1em;
+}
+
+.search_region input{
+    border-radius: 5px;
+    border-style: none;
+    height: 2em;
+    font-size: medium;
+    text-align: center;
+}
+
+/*gridovi*/
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+.grid-item {
+    padding-bottom: 40px;
+}
+
+.grid-container h1{
+    margin:0;
+    padding:0;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2
+}
+
+.item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+.item9{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.grid-container iframe{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 30em;
+    border: 0;
+}
+
+.grid-container video{
+    min-width: 100%;
+    min-height: 100%;
+    width: 2em;
+    height: 30em;
+}
+
+.grid-container audio{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*zadaca 3*/
+
+.opis_greske{
+    display: inline;
+    margin-top: -10px;
+    padding: 0px;
+    color: red;
+    font-size:medium;
+    font-weight: lighter;
+    float: left;
+}
+
+.naziv_greske{
+    display: inline;
+    margin-top: -10px;
+    padding: 0px;
+    color: red;
+    font-size:medium;
+    font-weight: lighter;
+    float: left;
+}
+
+.g-recaptcha{
+    display: inline-block;
+}
+
+
+.navbar_admin {
+    overflow: hidden;
+    background-color: black;
+    position: absolute; /* Set the navbar_admin to fixed position */
+    top: 30; /* Position the navbar_admin at the top of the page */
+    width: 100%; /* Full width */
+    /*border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: white;*/
+}
+
+    /* Links inside the navbar_admin */
+.navbar_admin a {
+    width: 16.66%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    /* Change background on mouse-over */
+.navbar_admin a:hover {
+    background: #ddd;
+    color: black;
+}
+
+    /* Main content */
+.admin-main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    padding-top: 50px;
+    color: white;
+}
+
+.navbar_moderator {
+    overflow: hidden;
+    background-color: black;
+    position: absolute; /* Set the navbar_admin to fixed position */
+    top: 30; /* Position the navbar_admin at the top of the page */
+    width: 100%; /* Full width */
+    /*border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: white;*/
+}
+
+    /* Links inside the navbar_admin */
+.navbar_moderator a {
+    width: 20%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    /* Change background on mouse-over */
+.navbar_moderator a:hover {
+    background: #ddd;
+    color: black;
+}
+
+#greske{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
