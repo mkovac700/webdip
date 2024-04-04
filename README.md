@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   
-  <img width="128" height="128" src="./Software/materijali/oil.png" alt="logo"/>
+  <img width="128" height="128" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Software/materijali/oil.png" alt="logo"/>
 
   <h3 align="center">Benzinska postaja</h3>
 
@@ -115,7 +115,7 @@ Za detaljan opis funkcionalnosti klinite <a href="./Documentation/Opće upute v
 
 Za pokretanje rješenja bit će vam potrebno sljedeće:
 
-* Operativni sustav Linux (preporuka)
+* Operativni sustav Linux
   
   Za izradu rješenja korišten je <a href="https://linuxmint.com/">Linux Mint</a> na <a href="https://www.virtualbox.org/">Oracle VirtualBox VM</a>. 
 
@@ -123,7 +123,18 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
   ```bash
   ⚠️ NAPOMENA: Za izradu projekta korištene verzije alata su sljedeće:
 
+  WebDiP_05@webpredmeti:~$ apache2 -v
+  Server version: Apache/2.4.41 (Ubuntu)
+  Server built:   2022-06-14T13:30:55
 
+  WebDiP_05@webpredmeti:~$ mysql -V
+  mysql  Ver 8.0.31-0ubuntu0.20.04.2 for Linux on x86_64 ((Ubuntu))
+
+  WebDiP_05@webpredmeti:~$ php -v
+  PHP 7.4.3 (cli) (built: Nov  2 2022 09:53:44) ( NTS )
+  Copyright (c) The PHP Group
+  Zend Engine v3.4.0, Copyright (c) Zend Technologies
+      with Zend OPcache v7.4.3, Copyright (c), by Zend Technologies
   ```
 
   * Instalirajte LAMP:
@@ -233,7 +244,7 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
     <br>
 
     <div align="center">
-      <a href="./Documentation/Screenshot_2023-08-03_15-47-32.png"><img alt="webdip_demo" src="./Documentation/Screenshot_2023-08-03_15-47-32.png" width=80%></a>
+      <a href="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-47-32.png"><img alt="webdip_demo" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-47-32.png" width=80%></a>
     </div>
 
     <br>
@@ -243,7 +254,7 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
     <br>
 
     <div align="center">
-      <a href="./Documentation/Screenshot_2023-08-03_15-49-18.png"><img alt="webdip_demo" src="./Documentation/Screenshot_2023-08-03_15-49-18.png" width=80%></a>
+      <a href="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-49-18.png"><img alt="webdip_demo" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-49-18.png" width=80%></a>
     </div>
 
     <br>
@@ -253,7 +264,7 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
     <br>
 
     <div align="center">
-      <a href="./Documentation/Screenshot_2023-08-03_15-49-40.png"><img alt="webdip_demo" src="./Documentation/Screenshot_2023-08-03_15-49-40.png" width=80%></a>
+      <a href="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-49-40.png"><img alt="webdip_demo" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-49-40.png" width=80%></a>
     </div>
 
     <br>
@@ -263,7 +274,7 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
     <br>
 
     <div align="center">
-      <a href="./Documentation/Screenshot_2023-08-03_15-50-23.png"><img alt="webdip_demo" src="./Documentation/Screenshot_2023-08-03_15-50-23.png" width=80%></a>
+      <a href="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-50-23.png"><img alt="webdip_demo" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-50-23.png" width=80%></a>
     </div>
 
     <br>
@@ -273,7 +284,7 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
     <br>
 
     <div align="center">
-      <a href="./Documentation/Screenshot_2023-08-03_15-51-21.png"><img alt="webdip_demo" src="./Documentation/Screenshot_2023-08-03_15-51-21.png" width=80%></a>
+      <a href="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-51-21.png"><img alt="webdip_demo" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-51-21.png" width=80%></a>
     </div>
 
     <br>
@@ -283,7 +294,7 @@ Za pokretanje rješenja bit će vam potrebno sljedeće:
     <br>
 
     <div align="center">
-      <a href="./Documentation/Screenshot_2023-08-03_15-53-42.png"><img alt="webdip_demo" src="./Documentation/Screenshot_2023-08-03_15-53-42.png" width=80%></a>
+      <a href="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-53-42.png"><img alt="webdip_demo" src="https://raw.githubusercontent.com/mkovac700/webdip/docs/Documentation/Screenshot_2023-08-03_15-53-42.png" width=80%></a>
     </div>
 
     <br>
